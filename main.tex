@@ -9,17 +9,32 @@
 
 % VARIABLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 \begin{document}
 
 % COVER PAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{covers/_cover1}
+\include{covers/_cover2}
+\include{covers/declaration}
+\include{covers/certificate}
+\include{covers/table_of_contents}
 
 \pagenumbering{Roman} % Roman numbers for cover pages.
+\include{covers/acknoledgement}
+\include{covers/abstract}
+\include{covers/list_of_tables} 
+\include{covers/list_of_figures} 
+\include{covers/abbreviations}
+\include{covers/notations}
 
 
 % CHAPTERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{arabic} % Arabic numbers for contents
 \include{chapters/introduction}
+\include{chapters/literature_survey}
+\include{chapters/requirements}
+\include{chapters/system_design}
+\include{chapters/methodology}
+\include{chapters/conclusion}
 
 
 % APPENDICES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
