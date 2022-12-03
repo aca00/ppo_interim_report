@@ -1,6 +1,30 @@
 \chapter{Literature survey}
 
-\section{coagmento}
+\section{Design principles for colloborative information seeking}
+
+Websites are a great source of knowledge. These are areas in cyberspace where individuals with similar interests can come together. But, even if two people are at the same site at the same time, they don’t see each other. The comment section that a website provides is a tool that we utilise to communicate with it and its users. But this lacks uniformity among websites and looks too simple to be a solution for collaboration.
+
+though collaboration is a natural choice in many situations, there is a lack of specialized tools for seeking information collaboratively. There have been efforts to foster engagement and cooperation in cyberspace, several of which focused on collaborative information-seeking systems (CIS). For instance, Hyldegard \cite{hyldegard_collaborative_2006} employed Kuhlthau’s Information Search Process model \cite{kuhlthau2005towards}, a model created based on single-person knowledge seeking and retrieval, in a study of information seeking and retrieval in a group-based educational context.
+
+In 2009, Shah and his team outlined the design criteria and practical use of a cooperative information-seeking system, based on pilot studies and by collecting feedback from users, called Coagmento \cite{shah_learning_2009}. They formulated design guidelines based on Surowiecki’s \cite{fleenor2006wisdom} four conditions for successful collaboration. They are; (1) diversity of opinion, (2) independence, (3) decentralization, and (4) aggregation. They also took inspiration from Morris and Horvitz’s SearchTogether system \cite{morris2007searchtogether} based on supporting (1) awareness, (2) division of labour, and (3) persistence for collaboration. Based on extensive studies about collaborating tools, they inferred the following set of guidelines for designing a user-centred CIS system.
+
+\begin{itemize}
+    \item The system should provide an effective way for users to communicate with each other.
+    \item The system should allow (and encourage) each user to make individual contributions to the collaborative.
+    \item The system should coordinate user actions, information requests, and responses to support an active and interactive collaboration. This collaboration could be synchronous or asynchronous and co-located or remote.
+    \item The system needs to support discussion and negotiation processes among the users.
+\end{itemize}
+
+Using the above guidelines, they developed a prototype system called Coagmento that allows two or more people to work together for seeking information. 
+
+The prototype was later implemented as a browser plugin  \cite{gonzalez-ibanez_coagmento_2011} which they made available for popular web browsers like Firefox and Chrome. Along with information collection, sharing and rating, they also implemented communication through PHP free chat\footnote{A simple, fast and customizable chat server which can be easily adapted to projects. Both free and subscription plans are available. Website: http://www.phpfreechat.net/}. The main purpose of this plugin was to collect information from websites by collaborating with other information seekers. It had a complex and old UI. The possibilities of collaborative spam protection and security are not explored. Although it had impressive tools to gather content from websites, it looked too ’academic’ and ’research-oriented’ in nature.
+
+Coagmento v3.0 \cite{soltani_coagmento_2019}, a more recent version of the plugin, confirmed this trend. Rather than a tool for the general public to interact and collaborate, its focus is on research-oriented scenarios. Coagmento intends to increase the efficiency of the information collection process of researchers by serving as a tool for facilitating many of the needs for designing and running a lab study, from executing a session flow to collecting log data\cite{soltani_coagmento_2019}. Several improvements were made to the user interface with additional features like user management, stage editor and questionnaire.
+
+Coagmento’s back end primarily comprises PHP, built on Laravel to create a RESTful framework. The front end is largely custom HTML, CSS, and JavaScript, and the Chrome Extension is also custom. Coagmento can be run locally on a laptop but is intended to run on a remote server so that participants may access it via the web. 
+
+Although Coagmento provides impressive tools for information seeking and collaboration, as said earlier, it is primarily suited for researchers and academicians. Moreover, the possibility of ensuring content quality and the security of the website through collaboration by netizens is not explored. However, the design guidelines and prototypes they provided may be useful in this project to develop a browser plugin that would give visitors a space to interact and a chance to review the quality of the information provided by the website.
+
 
 \section{check it}
 
